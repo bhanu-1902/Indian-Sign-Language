@@ -54,7 +54,7 @@ Here 2 methods for preprocessing are used. First one is the background subtracti
 
 <p align="center">
   <br>
-<img align="center" src="https://github.com/shag527/Indian-Sign-Language-Recognition/blob/master/Images/mask.png">       <img align="center" src="https://github.com/shag527/Indian-Sign-Language-Recognition/blob/master/Images/after mask.png">       <img align="center" src="https://github.com/shag527/Indian-Sign-Language-Recognition/blob/master/Images/canny.png">
+<img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/mask.png">       <img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/after mask.png">       <img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/canny.png">
   <br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mask &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;After applying mask &nbsp; &nbsp; &nbsp;&nbsp;Canny Edge detection
 </p>
