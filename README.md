@@ -94,6 +94,6 @@ The predicted labels are shown in the form of text as well as speech using the p
 - [Bag of Visual Words (BOVW)](https://medium.com/@aybukeyalcinerr/bag-of-visual-words-bovw-db9500331b2f)
 - [Visual bag-of-words](https://ianlondon.github.io/blog/visual-bag-of-words/)
 - [Image Classification with Convolutional Neural Networks](https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8)
-- [how-to-sift-opencv](https://ianlondon.github.io/blog/how-to-sift-opencv/)
+- [Image Classification in Python with SIFT](https://ianlondon.github.io/blog/how-to-sift-opencv/)
 
 
