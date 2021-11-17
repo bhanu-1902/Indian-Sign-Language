@@ -42,6 +42,12 @@ Now, using `pip install` command, include the following dependencies
 
 ## Workflow
 
+
+<p align="center">
+  <br>
+  <img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/flowchart.jpg">
+</p>
+
 ### Preprocessing
 
 Here 2 methods for preprocessing are used. First one is the background subtraction using an additive method, in which the first 30 frames are considered as background and any new object in the frame is then filtered out. Second one uses the skin segmentation concept, which is based on the extraction of skin color pixels of the user.
