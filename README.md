@@ -23,7 +23,7 @@ Some images of the dataset are shown below:
 
 <p align="center">
   <br>
-<img align="center" src="https://github.com/shag527/Indian-Sign-Language-Recognition/blob/master/Images/dataset.png" width="800" height="750">   
+<img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/dataset.png" width="800" height="750"> 
  </p>
 
 Now, using `pip install` command, include the following dependencies
