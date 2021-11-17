@@ -4,7 +4,7 @@ Sign Languages are a set of languages that use predefined actions and movements 
 
 In this project, the aim is towards designing and developing an Indian Sign Language recognition system that would help any deaf and dumb person commnicate to a perfectly abled person without the need of a translator, and vice-versa.
 
-The purpose of this project is to recognize all the alphabets (A-Z) and digits (0-9) of Indian sign language using bag of visual words model and convert them to text/speech. Dual mode of recognition is implemented for better results. TDifferent machine learning techniques like Support Vector Machines (SVM), Logistic Regression, K-nearest neighbors (KNN) and a neural network technique Convolution Neural Networks (CNN), are explored for detection of sign language. The dataset for this system is created manually in different hand orientations and a train-test ratio of 80:20 is used.
+The code recognizes all the alphabets (A-Z) and digits (0-9) of the Indian Sign Language using bag of visual words model and converts them to text/speech. Dual mode of recognition is implemented for better results. Different machine learning techniques like Support Vector Machines (SVM), Logistic Regression, K-nearest neighbors (KNN) and a neural network technique Convolution Neural Networks (CNN), are explored for detection of sign language. The dataset for this system is created manually in different hand orientations and a train-test ratio of 80:20 is used.
 
 ## Getting Started
 
@@ -48,9 +48,9 @@ Now, using `pip install` command, include the following dependencies
   <img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/flowchart.jpg">
 </p>
 
-### Preprocessing
+### Image Preprocessing
 
-Here 2 methods for preprocessing are used. First one is the background subtraction using an additive method, in which the first 30 frames are considered as background and any new object in the frame is then filtered out. Second one uses the skin segmentation concept, which is based on the extraction of skin color pixels of the user.
+Here 2 methods for preprocessing are used. First one is the background subtraction using an additive method, in which the first 30 frames are considered as background and any new object in the frame is then filtered out. Second one uses the skin segmentation concept, the main objective of which is to remove the background and noises, leaving only the Region of Interest (ROI), which is the only useful information in the image. This is achieved via Skin Masking defining the threshold on RGB schema and then converting RGB colour space to grey scale image. Finally Canny Edge technique is employed to identify and detect the presence of sharp discontinuities in an image, thereby detecting the edges of the figure in focus.
 
 <p align="center">
   <br>
@@ -64,7 +64,7 @@ Here 2 methods for preprocessing are used. First one is the background subtracti
 The Speeded Up Robust Feature (SURF) technique is used to extract descriptors from the segmented hand gesture images. These descriptors are then clustered to form the similar clusters and then the histograms of visual words are generated, where each image is represented by the frequency of occurrence of all the clustered features. The total classes are 36.
 <p align="center">
   <br>
-  <img align="center" src="https://github.com/shag527/Indian-Sign-Language-Recognition/blob/master/Images/SURF.png">
+  <img align="center" src="https://github.com/bhanu-1902/Indian-Sign-Language/blob/master/Images/SURF.png">
  <br>
  &nbsp&nbsp&nbsp&nbsp&nbsp SURF Features
 </p>
@@ -92,4 +92,8 @@ The predicted labels are shown in the form of text as well as speech using the p
 ### Credits
 
 - [Bag of Visual Words (BOVW)](https://medium.com/@aybukeyalcinerr/bag-of-visual-words-bovw-db9500331b2f)
+- [Visual bag-of-words](https://ianlondon.github.io/blog/visual-bag-of-words/)
 - [Image Classification with Convolutional Neural Networks](https://medium.com/@ksusorokina/image-classification-with-convolutional-neural-networks-496815db12a8)
+- [how-to-sift-opencv](https://ianlondon.github.io/blog/how-to-sift-opencv/)
+
+
