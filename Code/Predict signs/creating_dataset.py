@@ -20,7 +20,7 @@ def cd_main():
             return
         cv2.accumulateWeighted(image,bg,aweight)
 
-    # Segment the egion of hand
+    # Segment the region of hand
     def extract_hand(image,threshold=25):
         nonlocal bg
         diff=cv2.absdiff(bg.astype("uint8"),image)

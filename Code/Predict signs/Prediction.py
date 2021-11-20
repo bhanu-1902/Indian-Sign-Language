@@ -46,7 +46,7 @@ def pred_main():
     else:
         method = 1
 
-    model='D:/Indian-Sign-Language-Recognition-master/Code/Predict signs/files/CNN'
+    model='D:/Indian Sign Language/Code/Code/Predict signs/files/CNN'
 
     infile = open(model,'rb')
     cnn = pickle.load(infile)
