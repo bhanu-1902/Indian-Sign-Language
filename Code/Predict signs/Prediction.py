@@ -246,7 +246,7 @@ def pred_main():
                 res = cv2.bitwise_and(roi, roi, mask=mask)
                 res = cv2.cvtColor(res, cv2.COLOR_BGR2GRAY)
 
-                (cnts, _) = cv2.findContours(res, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+                (_, cnts, _) = cv2.findContours(res, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
                 if len(cnts)>0:
                     max_cont = max(cnts, key=cv2.contourArea)
                     if max_cont is not None:
