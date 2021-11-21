@@ -1,5 +1,4 @@
 # Importing the necessary libraries
-
 import os
 import cv2
 import random

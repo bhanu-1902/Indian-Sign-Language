@@ -28,7 +28,7 @@ def surf_features(images):
     print(key," Completed!")
   return [surf_descriptors_list,surf_vectors_list]
 
-  # Creating a visual dictionary using only the train dataset 
+# Creating a visual dictionary using only the train dataset 
 # K-means clustering alogo takes only 2 parameters which are number of clusters (k) and descrpitors list
 # It reurn an array which holds central points
 
