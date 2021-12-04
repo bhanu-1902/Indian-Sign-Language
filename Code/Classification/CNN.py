@@ -130,7 +130,7 @@ def create_model():
 
 model=create_model()
 batch_size=256
-epochs=100
+epochs=1
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 model.summary()
@@ -147,7 +147,7 @@ plt.legend(['Training loss', 'Validation Loss'],fontsize=15)
 plt.xlabel('Epochs ',fontsize=16)
 plt.ylabel('Loss',fontsize=16)
 plt.title('Loss Curves',fontsize=16)
-
+plt.show()
 # Visualizing accuracy
 
 plt.figure(figsize=[8,6])

@@ -50,5 +50,6 @@ df_cm=pd.DataFrame(c_m)
 
 plt.figure(figsize=(20,17))
 plt.title("Confusion Matrix for Gaussian Naive Bayes")
+plt.show()
 sbn.heatmap(df_cm,annot=True)
 
