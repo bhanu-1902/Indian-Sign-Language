@@ -130,7 +130,7 @@ def create_model():
 
 model=create_model()
 batch_size=256
-epochs=1
+epochs=100
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 model.summary()
